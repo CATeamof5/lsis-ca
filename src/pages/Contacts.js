@@ -10,11 +10,11 @@ function Contacts() {
             <div className='contacts__container_img'></div>
             <div className="contacts__container">
                 <h2>SUSISIEKITE</h2>
-                    <form method="POST" data-netlify="true">
+                    <form name="contacts form" method="post" data-netlify="true" onSubmit="submit">
                         <label htmlFor="name">Vardas</label>
-                        <input type="text" name="name"/>
-                        <label htmlFor="name">El.paštas</label>
-                        <input type="email" name="email"/>
+                        <input type="text" name="name" id="name"/>
+                        <label htmlFor="email">El.paštas</label>
+                        <input type="email" name="email" id="email"/>
                         <textarea cols="30" rows="10" placeholder='Jūsų žinutė..' name="message"></textarea>
                         <Button className={`${styleBtn.btn} ${styleBtn.btnDark}`} text={'Pateikti'}/>
                     </form>
