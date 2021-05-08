@@ -10,7 +10,7 @@ function Contacts() {
             <div className='contacts__container_img'></div>
             <div className="contacts__container">
                 <h2>SUSISIEKITE</h2>
-                    <form name="contacts" netlify method="post" >
+                    <form name="contacts" netlify >
                         <label htmlFor="name">Vardas</label>
                         <input type="text" name="name" id="name"/>
                         <label htmlFor="email">El.paštas</label>
